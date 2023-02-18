@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário Personal Trainer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="cabecalho">
+        <h1 id="titulo">Formulário para novos alunos do Programa de Consultoria Online</h1>
+        <p id="subtitulo">Complete as informações abaixo:</p>
+    </div>    
+
+    <form action="">
+        <fieldset>
+            <div class="dados">
+                <label for="sexo"><strong>Sexo</strong></label>
+                <select name="sexo" id="sexo" required>
+                    <option selected disabled value="">Selecione</option>
+                    <option value="masculino">Masculino</option>
+                    <option value="feminino">Feminino</option>
+                    <option value="outro">Outro</option>
+                </select>
+            </div>
+            <div class="dados">
+                <label for="nome"><strong>Nome</strong></label>
+                <input type="text" nome="nome" id="nome" required>
+            </div>
+            
+            <div class="dados">
+                <label for="sobrenome"><strong>Sobrenome</strong></label>
+                <input type="text" name="sobrenome" id="sobrenome" required>
+            </div>
+            <div class="dados">
+                <label for="email"><strong>Email</strong></label>
+                <input type="email" name="email" id="email" required> 
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <div class="medidas">
+                <label for="idade"><strong>Idade</strong></label>
+                <input type="number" name="idade" id="idade">
+            </div>
+            <div class="medidas">
+                <label for="peso"><strong>Peso (kg)</strong></label>
+                <input type="number" name="peso" id="peso">
+            </div>
+            <div class="medidas">
+                <label for="estatura"><strong>Estatura (cm)</strong></label>
+                <input type="number" name="estatura" id="estatura">
+            </div>
+        </fieldset>
+        
+        <fieldset>
+            <div class="treino">
+                <label for="treino"><strong>Você já  treina?</strong></label>
+                <input type="radio" name="treino" id="sim" value="sim"><strong>Sim</strong>  
+                <input type="radio" name="treino" id="nao" value="nao"><strong>Não</strong>  
+            </div>
+            <div class="treino">
+                <br>
+                <label for="comentario"><strong>Escreva sua experiência com a Musculação</strong></label> <br>
+                <textarea id="exp" nome="exp"></textarea>
+            </div>
+        </fieldset>
+            <div class="botao">
+                <button class="botao" type="submit">Enviar</button>
+            </div>  
+    </form>
+</body>
+</html>
