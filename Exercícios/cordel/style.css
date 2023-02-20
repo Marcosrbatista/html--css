@@ -2,21 +2,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Passion+One&family=Sriracha&display=swap');
 
 :root {
-    --fonte1: Verdana, "Geneva", Tahoma, sans-serif;
-    --fonte2: 'Passion One', "cursive";
+    --fonte1: Verdana, 'Geneva', Tahoma, sans-serif;
+    --fonte2: 'Passion One', 'cursive';
     --fonte3: 'Sriracha', "cursive";
 }
 
 
 * {
     margin: 0;
-    padding: 0;
     font-size: 1em;
-    text-decoration: none;
+    padding: 0;
 }
 
 body {
-    background-color: white;
+    background-color: darkgray;
     font-family: var(--fonte1);
     min-height: 100vh;
 }
@@ -47,8 +46,9 @@ header > p > a.cabecalho-link {
     text-decoration: none;
 }
 
+
+
 main.cordel {
-    padding-bottom: 10vh;
     line-height: 2em;
     font-family: var(--fonte3);
     font-size: 3.5vw;
@@ -58,8 +58,8 @@ div.cordel-paragrafo {
     background-color: white;
     color: black;
     font-family: var(--fonte3);
-    padding: 0px 0px 0px 20px;
-    margin: 0px 0px 0px 20px;
+    padding: 30px 0px 30px 25px;
+    margin: 0px 0px 0px 0px;
 }
 
 div.cordel-paragrafo-imgum {
@@ -82,8 +82,8 @@ div > p#imagem {
     display: inline-block;
     background-color: rgba(0, 0, 0, 0.514);
     color: white;
-    padding: 0px 0px 0px 20px;
-    margin: 0px 0px 0px 20px;
+    padding: 0px 0px 0px 5px;
+    margin: 30px 0px 30px 20px;
     }   
 
 footer.rodape {
@@ -92,6 +92,8 @@ footer.rodape {
 
 footer {
     background-color: black;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 footer > div > p {
@@ -103,4 +105,9 @@ footer > div > p > a {
     color: white;
     text-align: center;
     font-weight: bold;
+    text-decoration: none;
+}
+
+header>p>a.cabecalho-link:hover, p>a:hover {
+    text-decoration: underline;
 }
